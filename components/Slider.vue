@@ -94,13 +94,9 @@ export default {
         }
 
         const slidesAwayFromFirst = i - this.activeSlideIndex
-
-        const minHeightScale = 1 - slidesAwayFromFirst / 5 - 0.2
         const timestampHeightScale = 1 - slidesAwayFromFirst / 5 - 0.2 + 0.2 * currentTimestampScale // (1 - slidesAwayFromFirst / 5) * currentTimestampScale
 
-        const heightScale = timestampHeightScale < minHeightScale ? minHeightScale : timestampHeightScale
-
-        this.$refs[`slide${i}`][0].style.transform = `scale(${heightScale})`;
+        this.$refs[`slide${i}`][0].style.transform = `scale(${timestampHeightScale})`;
       }
     }
   }
