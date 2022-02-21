@@ -1,6 +1,7 @@
 <template>
   <div class="app-container">
     <Slider />
+    <!-- <SliderV2 /> -->
   </div>
 </template>
 
@@ -22,6 +23,6 @@ body {
   height: 100%;
   padding: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 </style>
